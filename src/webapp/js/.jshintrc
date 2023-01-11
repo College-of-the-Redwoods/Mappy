@@ -1,0 +1,28 @@
+{
+    //"moz": true,
+    "esversion": 6,
+    "boss": true,
+    "curly": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "expr": true,
+    "immed": true,
+    "noarg": true,
+    "onevar": true,
+    "quotmark": "double",
+    "smarttabs": true,
+    "trailing": true,
+    "undef": true,
+    "unused": true,
+    "maxerr": 100,
+    "node": true,
+    "predef" : [ // Custom globals.
+        "document",
+        "window",
+        "ol",
+        "WebSocket"
+    ],
+    "exported": [ // Entry functions that we don't care aren't used.
+        "add"
+    ]
+}

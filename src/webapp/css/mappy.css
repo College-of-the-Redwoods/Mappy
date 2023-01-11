@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #5FDED7;
+  /* font-family: papyrus, fantasy; */
+  font-family: american typewriter, serif;
+}
+a:link {
+  color: rgba(195,188,108,1.0);
+}
+a:visited {
+  color: rgba(195,188,108,0.5);
+}
+a:hover {
+  color: rgba(214,42,112,1.0);
+}
+#main {
+  position:relative;
+  /* margin-right: 304px; */
+  height: 100%;
+  background-color: black;
+}
+#debug {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 300px;
+  height: 200px;
+  background-color: #E22A77;
+  border: 2px black solid;
+  z-index: 9999;
+}
+#messages {
+  text-align: left;
+  height: 160px;
+  width: 100%;
+  padding: 1px;
+  color: rgba(214,42,112,1.0);
+  background-color: rgba(26,27,29,1.0);
+  overflow: auto;
+}
+.input-fields {
+  height: 36px;
+  color: rgba(195,188,108,1.0);
+  background-color: rgba(39,39,39,1.0)
+}
+.map {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.ol-popup {
+  position: absolute;
+  color: rgba(214,42,112,1.0);
+  background-color: rgba(26,27,29,1.0);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
+}
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.ol-popup:after {
+  border-top-color: rgba(26,27,29,1.0);
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+.ol-popup-closer:after {
+  content: "✖";
+}
